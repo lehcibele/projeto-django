@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: gray;
+    padding: 20px;
+}
+
+p {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    color: #000000;
+    background-color: gray;
+    border-radius: 8px;
+}
+
+a:hover {
+    background-color: #242424;
+    color: #FFFFFF;
+}

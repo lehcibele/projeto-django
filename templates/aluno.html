@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
+    <title>Aluno</title>
 
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aluno.css' %}">
 
 </head>
 <body>
-    <h1>Página inícial</h1>
-    <p>Meu primeiro projeto usando Django</p>
-
+    <h1>Página do aluno</h1>
+    <p>ID recebido pela url: {{id_aluno}}</p>
+    <a href="{% url 'index' %}">Início</a>
     <a href="{% url 'contato' %}">Contato</a>
-    <a href="{% url 'aluno' id_aluno=1  %}">Aluno</a>
 
 </body>
 </html>

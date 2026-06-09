@@ -1,7 +1,11 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, "index.html")
+    nome = request.GET.get("nome")
+    contexto = {
+        "nome": nome
+    }
+    return render(request, "index.html", contexto)
 
 def contato(request):
     return render(request, "contato.html")

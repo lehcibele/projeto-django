@@ -16,5 +16,11 @@
     <a href="{% url 'contato' %}">Contato</a>
     <a href="{% url 'aluno' id_aluno=1  %}">Aluno</a>
 
+    {% if nome %}
+        <p>Olá, {{nome}}</p>
+    {% else %}
+        <p>Olá, visitante</p>
+    {% endif %}
+
 </body>
 </html>

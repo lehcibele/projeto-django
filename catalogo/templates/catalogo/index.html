@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+
+    <link rel="stylesheet" href="{% static 'catalogo/css/style.css' %}">
+</head>
+<body>
+
+    <h1>Meu catálogo de filmes</h1>
+    <div class="container-obras">
+        {% for obra in obras %}
+            <div class="card-obra">
+                <img src="{{obra.imagem}}" alt="">
+                <h2>{{obra.titulo}}</h2>
+                <p>{{obra.tipo}}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

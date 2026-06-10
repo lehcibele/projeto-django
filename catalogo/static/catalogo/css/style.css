@@ -1,0 +1,17 @@
+.container-obras {
+    display: flex;
+
+}
+
+.card-obra {
+    background-color: rgb(228, 240, 127);
+    width: 250px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card-obra img {
+    width: 100%;
+    height: 80%;
+}
